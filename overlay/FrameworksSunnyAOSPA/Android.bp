@@ -1,6 +1,5 @@
 runtime_resource_overlay {
     name: "FrameworksSunnyAOSPA",
     theme: "FrameworksSunnyAOSPA",
-    sdk_version: "current",
     product_specific: true,
 }
