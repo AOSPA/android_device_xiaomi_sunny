@@ -502,20 +502,6 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
-framework/tcmclient.jar
--system_ext/bin/dpmd
-system_ext/etc/dpm/dpm.conf
-system_ext/etc/init/dpmd.rc
-system_ext/etc/permissions/com.qti.dpmframework.xml
-system_ext/etc/permissions/dpmapi.xml
-system_ext/framework/com.qti.dpmframework.jar
-system_ext/framework/dpmapi.jar
--system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_system_ext
--system_ext/lib64/libdpmctmgr.so
--system_ext/lib64/libdpmfdmgr.so
--system_ext/lib64/libdpmframework.so
--system_ext/lib64/libdpmtcm.so
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_vendor
@@ -614,39 +600,6 @@ vendor/lib64/vendor.qti.gnss@4.0.so|5ef1845cf0a310a52bfbdbc719685270ea4e39b3
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
 
 # IMS
--system_ext/app/ImsRcsService/ImsRcsService.apk|7e29c11b52bce9bdb33d0ea364faa13150b8cd08
--system_ext/app/uceShimService/uceShimService.apk
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|e01800d96b0db524836856410d3dd0b9352ec46c
-system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
--system_ext/lib64/lib-imsvideocodec.so
--system_ext/lib64/lib-imsvt.so
--system_ext/lib64/lib-imsvtextutils.so
--system_ext/lib64/lib-imsvtutils.so
--system_ext/lib64/libdiag_system.so
--system_ext/lib64/libimscamera_jni.so
--system_ext/lib64/libimsmedia_jni.so
--system_ext/lib64/vendor.qti.diaghal@1.0.so
--system_ext/lib64/vendor.qti.diaghal@1.0.so
--system_ext/lib64/vendor.qti.ims.factory@1.0.so
--system_ext/lib64/vendor.qti.ims.factory@1.0.so;MODULE=vendor.qti.ims.factory@1.0_system_ext
--system_ext/lib64/vendor.qti.ims.factory@1.1.so
--system_ext/lib64/vendor.qti.ims.factory@1.1.so;MODULE=vendor.qti.ims.factory@1.1_system_ext
--system_ext/lib64/vendor.qti.ims.factory@2.0.so
--system_ext/lib64/vendor.qti.ims.factory@2.0.so;MODULE=vendor.qti.ims.factory@2.0_system_ext
--system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
--system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so;MODULE=vendor.qti.ims.rcsconfig@1.0_system_ext
--system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
--system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so;MODULE=vendor.qti.ims.rcsconfig@1.1_system_ext
--system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so
--system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so;MODULE=vendor.qti.ims.rcsconfig@2.0_system_ext
--system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so
--system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so;MODULE=vendor.qti.ims.rcsconfig@2.1_system_ext
--system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
--system_ext/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_system_ext
--system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -812,12 +765,6 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 
 # RIL
-etc/sysconfig/qti_whitelist.xml
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
-system_ext/etc/permissions/qcrilhook.xml
-system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/framework/qcrilhook.jar
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrild
 vendor/bin/adpl
 vendor/bin/netmgrd

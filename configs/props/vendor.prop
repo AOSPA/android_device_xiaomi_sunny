@@ -79,14 +79,11 @@ debug.media.codec2=2
 ro.vendor.qti.va_aosp.support=1
 
 # Radio
-persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.dynamic_sar=1
 persist.vendor.radio.force_ltd_sys_ind=1
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.manual_nw_rej_ct=1
-persist.vendor.radio.procedure_bytes=SKIP
-persist.vendor.radio.rat_on=combine
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.enable_temp_dds=true
 
