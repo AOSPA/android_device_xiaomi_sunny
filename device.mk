@@ -297,13 +297,6 @@ TARGET_COMMON_QTI_COMPONENTS += \
     gps \
     init
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3.vendor
-
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab_AB.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
