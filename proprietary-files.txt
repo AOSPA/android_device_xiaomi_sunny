@@ -568,6 +568,7 @@ vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libspl.so|e2b3e2dd28b0eee567d72de696cd1e01288ae06f
 vendor/lib64/libssd.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
