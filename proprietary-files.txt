@@ -966,8 +966,5 @@ vendor/firmware/aw87xxx_vmax_1.bin
 # Wigig Firmware
 vendor/firmware/wigig/wigig.ini
 
-# WLAN
-vendor/bin/cnss-daemon
-
 # Xiaomi MAC
 vendor/bin/nv_mac
