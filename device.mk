@@ -88,7 +88,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64
 
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_PACKAGES += \
@@ -130,29 +129,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
-    android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.composer@2.2-resources.vendor \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    vendor.qti.hardware.display.allocator-service
-
-PRODUCT_PACKAGES += \
-    gralloc.default \
-    gralloc.sm6150 \
-    hwcomposer.sm6150 \
-    memtrack.sm6150
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.mapper@1.0.vendor \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.composer@1.0.vendor \
-    vendor.qti.hardware.display.composer@2.0.vendor \
-    vendor.qti.hardware.display.allocator@1.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor
+    android.frameworks.displayservice@1.0.vendor
 
 # DisplayFeatures
 PRODUCT_PACKAGES += \
@@ -342,7 +319,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     audio \
     av \
     bt \
-    charging
+    charging \
+    display
 
 # Power
 PRODUCT_PACKAGES += \
@@ -412,10 +390,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
 
-# Touchscreen
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
@@ -461,10 +435,8 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libavservices_minijail_32 \
-    libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libnl \
-    libqdMetaData \
     libqdMetaData.system \
     libwfdaac_vendor
 
