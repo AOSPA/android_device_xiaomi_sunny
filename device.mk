@@ -341,7 +341,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     adreno \
     audio \
     av \
-    bt
+    bt \
+    charging
 
 # Power
 PRODUCT_PACKAGES += \

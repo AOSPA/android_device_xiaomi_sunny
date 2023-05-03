@@ -185,6 +185,8 @@ on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
 on charger
+    mount_all /vendor/etc/charger_fstab.qti --early
+    wait /sys/class/power_supply/battery
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
