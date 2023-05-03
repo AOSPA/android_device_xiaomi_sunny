@@ -75,10 +75,6 @@ persist.dbg.wfc_avail_ovr=1
 # Media Codec2
 debug.media.codec2=2
 
-# Perf
-ro.vendor.perf-hal.ver=2.2
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
