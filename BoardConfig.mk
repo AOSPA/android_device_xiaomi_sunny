@@ -87,7 +87,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/manifest/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/manifest/device_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest/manifest.xml
 
 # Init
