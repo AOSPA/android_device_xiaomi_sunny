@@ -224,7 +224,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     perf \
     telephony \
     usb \
-    vibrator
+    vibrator \
+    wfd
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -301,9 +302,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libavservices_minijail_32 \
     libdisplayconfig.system.qti \
-    libnl \
     libqdMetaData.system \
     libwfdaac_vendor
 
