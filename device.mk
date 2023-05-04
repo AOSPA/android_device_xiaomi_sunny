@@ -91,10 +91,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libMegviiFacepp-0.5.2 \
-    libmegface
-
-PRODUCT_PACKAGES += \
     libpiex_shim \
     camxoverridesettings.txt
 
