@@ -129,8 +129,6 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 -vendor/lib/libsurround_3mic_proc.so
 
 # Audio FX modules
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libasphere.so
 -vendor/lib/soundfx/libshoebox.so
 
@@ -761,7 +759,6 @@ vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 -vendor/lib64/libqtikeymaster4.so
 
 # Listen
--vendor/lib/hw/sound_trigger.primary.sm6150.so
 -vendor/lib/libadpcmdec.so
 -vendor/lib/libgcs-calwrapper.so
 -vendor/lib/libgcs-ipc.so
