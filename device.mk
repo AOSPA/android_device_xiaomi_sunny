@@ -320,7 +320,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     av \
     bt \
     charging \
-    display
+    display \
+    dsprpcd
 
 # Power
 PRODUCT_PACKAGES += \
