@@ -227,6 +227,12 @@
         <item>3500</item>
         <item>4000</item>
         <item>4500</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+        <item>10000</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
@@ -351,8 +357,14 @@
         <item>369</item>
         <item>434</item>
         <item>500</item>
-        <item>500</item>
-        <item>500</item>
+        <item>530</item>
+        <item>550</item>
+        <item>580</item>
+        <item>610</item>
+        <item>635</item>
+        <item>665</item>
+        <item>680</item>
+        <item>700</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -372,6 +384,7 @@
     <array name="config_screenBrightnessNits">
         <item>4</item>    <!-- index 1 -->
         <item>450</item>  <!-- index 2 -->
+        <item>700</item>  <!-- index 3(HBM) -->
     </array>
 
     <!-- Screen brightness used to dim the screen when the user activity
