@@ -158,6 +158,9 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 2-5
     write /dev/cpuset/restricted/cpus 2-5
 
+    # Start custom post_boot script
+    start sunny-post-boot
+
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
@@ -238,3 +241,10 @@ service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@
     onrestart restart surfaceflinger
     task_profiles ServiceCapacityLow
     socket pps stream 0660 system system
+
+service sunny-post-boot /vendor/bin/sh /vendor/bin/init.sunny.post_boot.sh
+    class core
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot

@@ -14,6 +14,32 @@
 // limitations under the License.
 //
 
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab_AB.qcom",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.sunny.post_boot.sh",
+    src: "init.sunny.post_boot.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.sunny.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.sunny.rc",
+    device_specific: true,
+}
+
 cc_library_static {
     name: "libinit_sunny",
     srcs: ["init_sunny.cpp"],
