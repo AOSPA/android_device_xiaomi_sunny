@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "TelephonySunny",
-    theme: "TelephonySunny",
+    name: "SystemUISunnyAOSPA",
+    theme: "SystemUISunnyAOSPA",
     sdk_version: "current",
     vendor: true,
 }

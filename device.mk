@@ -209,14 +209,10 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureSunny \
-    CarrierConfigSunny \
-    DisplayFeaturesSunny \
-    FrameworksSunny \
-    SettingsProviderSunny \
-    SettingsSunny \
-    SystemUISunny \
-    TelephonySunny \
-    WifiSunny \
+    FrameworksSunnyAOSPA \
+    SettingsProviderSunnyAOSPA \
+    SettingsSunnyAOSPA \
+    SystemUISunnyAOSPA \
     SettingsOverlayM2101K7AG \
     SettingsOverlayM2101K7AI
 
@@ -243,7 +239,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     gps \
     init \
     keymaster \
-    media
+    media \
+    overlay
 
 # Ramdisk
 PRODUCT_COPY_FILES += \

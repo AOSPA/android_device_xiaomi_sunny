@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "SystemUISunny",
-    theme: "SystemUISunny",
+    name: "FrameworksSunnyAOSPA",
+    theme: "FrameworksSunnyAOSPA",
     sdk_version: "current",
     vendor: true,
 }

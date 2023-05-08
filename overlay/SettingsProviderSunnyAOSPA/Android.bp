@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "SettingsProviderSunnyAOSPA",
+    theme: "SettingsProviderSunnyAOSPA",
+    sdk_version: "current",
+    vendor: true,
+}
