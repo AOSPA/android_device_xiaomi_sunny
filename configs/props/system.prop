@@ -1,5 +1,12 @@
 # Bluetooth
-vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.connect.peer_earbud=true
+persist.vendor.btstack.enable.lpa=true
+persist.vendor.btstack.enable.swb=true
+persist.vendor.btstack.enable.swbpm=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.service.bdroid.soc.alwayson=true
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
