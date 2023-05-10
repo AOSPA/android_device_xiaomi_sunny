@@ -196,7 +196,6 @@ PRODUCT_PACKAGES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    ApertureSunny \
     FrameworksSunnyAOSPA \
     SettingsProviderSunnyAOSPA \
     SettingsSunnyAOSPA \
