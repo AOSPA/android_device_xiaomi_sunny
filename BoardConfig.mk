@@ -84,9 +84,6 @@ TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
 TARGET_SCREEN_DENSITY := 440
 
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
-
 # FM
 BOARD_HAVE_QCOM_FM := true
 
@@ -95,10 +92,10 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/manifest/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/manifest/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest_vendor.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifest/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest/manifest.xml
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/manifest/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest/manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sunny
@@ -123,13 +120,8 @@ BOARD_KERNEL_CMDLINE += init.is_dt2w_sensor=1
 BOARD_KERNEL_CMDLINE += init.is_st2w_sensor=1
 
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CLANG_COMPILE := false
-TARGET_KERNEL_NEW_GCC_COMPILE := true
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
-TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 := arm-eabi-
-KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin
-TARGET_KERNEL_CONFIG := neternels_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sunny
+KERNEL_DEFCONFIG := neternels_defconfig
+KERNEL_NEW_GCC_SUPPORT := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Media
@@ -160,10 +152,6 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
-# Platform
-TARGET_BOARD_PLATFORM := sm6150
-BOARD_USES_QCOM_HARDWARE := true
-
 # Power
 TARGET_POWERHAL_BOOST_EXT := $(DEVICE_PATH)/power/boost-ext.cpp
 
@@ -189,7 +177,6 @@ VENDOR_SECURITY_PATCH := 2023-03-05
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

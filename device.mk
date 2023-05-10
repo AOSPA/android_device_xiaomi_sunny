@@ -13,13 +13,6 @@ $(call inherit-product, vendor/xiaomi/sunny/sunny-vendor.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Inherit Perf aspects
-$(call inherit-product, device/qcom/common/system/perf/qti-perf.mk)
-$(call inherit-product, device/qcom/common/vendor/perf-legacy/qti-perf-legacy.mk)
-
-# Inherit Adreno aspects
-$(call inherit-product, device/qcom/common/vendor/adreno-6xx-legacy/qti-adreno-6xx-legacy.mk)
-
 # A/B
 # Inherit virtual_ab_ota product
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -99,9 +92,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8150/audio/configs/msmsteppe/audio_tuning_mixer_tavil.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer_tavil.txt \
-    hardware/qcom-caf/sm8150/audio/configs/msmsteppe/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml \
-    hardware/qcom-caf/sm8150/audio/configs/msmsteppe/listen_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/listen_platform_info.xml
+    vendor/qcom/opensource/audio-hal/primary-hal/configs/msmsteppe/audio_tuning_mixer_tavil.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer_tavil.txt \
+    vendor/qcom/opensource/audio-hal/primary-hal/configs/msmsteppe/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml \
+    vendor/qcom/opensource/audio-hal/primary-hal/configs/msmsteppe/listen_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/listen_platform_info.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -204,9 +197,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.allocator@1.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor
-
-PRODUCT_PACKAGES += \
-    disable_configstore
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
@@ -311,8 +301,6 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor \
     libhidltransport.vendor \
     libhwbinder.vendor
 
@@ -358,8 +346,8 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
 
 PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8150/media/conf_files/sm6150/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    hardware/qcom-caf/sm8150/media/conf_files/sm6150/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml
+    hardware/qcom/media/conf_files/sm6150/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
+    hardware/qcom/media/conf_files/sm6150/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml
 
 # Netd
 PRODUCT_PACKAGES += \
@@ -382,7 +370,6 @@ PRODUCT_PACKAGES += \
     CarrierConfigSunny \
     DisplayFeaturesSunny \
     FrameworksSunny \
-    OpenDeltaSunny \
     SettingsProviderSunny \
     SettingsSunny \
     SystemUISunny \
@@ -399,19 +386,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     $(LOCAL_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
 
+# Platform
+MSMSTEPPE := sm6150
+TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor
-
-# QMI
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -467,28 +451,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
-    hardware/qcom-caf/wlan
-
-# Telephony
-PRODUCT_PACKAGES += \
-    extphonelib \
-    extphonelib-product \
-    extphonelib.xml \
-    extphonelib_product.xml \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti_telephony_utils_prd.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-hidl-wrapper-prd \
-    qti_telephony_hidl_wrapper_prd.xml \
-    qti-telephony-utils \
-    qti-telephony-utils-prd \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
@@ -515,10 +477,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
 
-# Vendor service manager
-PRODUCT_PACKAGES += \
-    vndservicemanager
-
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
@@ -543,7 +501,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     ipacm \
     IPACM_cfg.xml \
-    libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
 
@@ -571,4 +528,4 @@ PRODUCT_PACKAGES += \
 
 # Wlan
 PRODUCT_CFI_INCLUDE_PATHS += \
-    hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
+    hardware/qcom/wlan/qcwcn/wpa_supplicant_8_lib
