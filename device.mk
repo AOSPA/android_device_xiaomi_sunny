@@ -223,7 +223,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     overlay \
     perf \
     telephony \
-    usb
+    usb \
+    vibrator
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -275,9 +276,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh
-
-# Vibrator
-$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
