@@ -306,7 +306,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
     libavservices_minijail.vendor \
     libarbitrarybytes \
     libc2dcolorconvert \
@@ -389,6 +388,9 @@ PRODUCT_COPY_FILES += \
 # Platform
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
+
+TARGET_COMMON_QTI_COMPONENTS += \
+    av
 
 # Power
 PRODUCT_PACKAGES += \
