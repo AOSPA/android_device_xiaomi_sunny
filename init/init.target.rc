@@ -100,6 +100,9 @@ on post-fs-data
     # Create fingerprint related directory
     mkdir /data/vendor/fpc 0770 system system
 
+    # Create MAC Address related directory for BT/WiFi
+    mkdir /data/vendor/mac_addr 0770 system wifi
+
 on boot
     start rmt_storage
     start rfs_access
