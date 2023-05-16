@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "CarrierConfigSunnyAOSPA",
+    theme: "CarrierConfigSunnyAOSPA",
+    sdk_version: "current",
+    vendor: true,
+}

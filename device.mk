@@ -183,6 +183,7 @@ PRODUCT_PACKAGES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
+    CarrierConfigSunnyAOSPA \
     FrameworksSunnyAOSPA \
     SettingsProviderSunnyAOSPA \
     SettingsSunnyAOSPA \
