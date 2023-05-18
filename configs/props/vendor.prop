@@ -57,6 +57,7 @@ ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 vendor.display.enable_null_display=0
+vendor.display.override_doze_mode=1
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
