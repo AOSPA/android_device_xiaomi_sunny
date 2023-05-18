@@ -994,5 +994,8 @@ vendor/lib/libwfdutils_proprietary.so|788cc674ac7ba6e4c985ec9e8515c143f55e881b
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|c08e1803c3089ee5da37b0a56eb9c2bdf9aeb4b2
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|380ad98e1752662d1a2e2f6105fbcc8c28557d2c
 
+# WLAN - from sunny-user 12 RKQ1.210614.002 V14.0.2.0.SKGMIXM
+vendor/bin/cnss-daemon|b634ec0efec4ed68b7b760b19847598c969355ba
+
 # Xiaomi MAC
 vendor/bin/nv_mac
