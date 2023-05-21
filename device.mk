@@ -186,6 +186,10 @@ PRODUCT_PACKAGES += \
     SettingsOverlayM2101K7AG \
     SettingsOverlayM2101K7AI
 
+# Perf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
+
 # Platform
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
