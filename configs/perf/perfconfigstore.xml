@@ -31,6 +31,14 @@ property Name is called. -->
                 <Prop Name="ro.vendor.iocgrp.config" Value="1" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="ro.lmk.enable_userspace_lmk" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_age" Value="300000" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_limit" Value="15" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_enable" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.use_trim_settings" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.empty_app_percent" Value="50" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_empty_percent" Value="100" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_cache_percent" Value="100" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_enable_memory" Value="1000000000" />
 
     </PerfConfigs>
 </PerfConfigsStore>
