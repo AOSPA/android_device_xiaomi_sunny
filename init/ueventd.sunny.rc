@@ -17,6 +17,9 @@
 
 # spi ir nodes
 /dev/ir_spi               0660   system     system
+/dev/spidev0.1            0660   system	    system
+/dev/spidev22.0           0660   system     audio
+/dev/spidev10.0           0660   system     audio
 
 # mius iio devices
 /dev/iio:device*                                                           0660 system system
