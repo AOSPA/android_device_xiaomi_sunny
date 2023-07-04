@@ -146,6 +146,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
 
+TARGET_GPS_COMPONENT_VARIANT := gps
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
