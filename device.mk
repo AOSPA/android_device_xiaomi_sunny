@@ -198,6 +198,7 @@ TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
 TARGET_COMMON_QTI_COMPONENTS += \
     adreno \
+    alarm \
     audio \
     av \
     bt \
