@@ -135,7 +135,7 @@ start_msm_irqbalance660()
 start_msm_irqbalance()
 {
 	if [ -f /vendor/bin/msm_irqbalance ]; then
-			start vendor.msm_irqbalance
+			:
 	fi
 }
 
