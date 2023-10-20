@@ -53,9 +53,6 @@ endif
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
-# AOSP Bluetooth
-TARGET_USE_QTI_BT_STACK := false
-
 # Audio
 BOARD_SUPPORTS_SOUND_TRIGGER := false
 TARGET_PROVIDES_AUDIO_EXTNS := true
