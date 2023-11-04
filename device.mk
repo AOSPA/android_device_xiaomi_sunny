@@ -212,8 +212,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
 
 PRODUCT_PACKAGES += \
     init.sunny.post_boot.sh \
-    fstab.qcom \
-    fstab.qcom.vendor_ramdisk \
+    fstab.default \
+    fstab.default.vendor_ramdisk \
     init.target.rc \
     ueventd.sunny.rc
 

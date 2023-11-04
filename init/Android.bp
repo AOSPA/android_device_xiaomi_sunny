@@ -15,8 +15,8 @@
 //
 
 prebuilt_etc {
-    name: "fstab.qcom",
-    src: "fstab_AB.qcom",
+    name: "fstab.default",
+    src: "fstab.default",
     vendor: true,
     vendor_ramdisk_available: true,
 }
