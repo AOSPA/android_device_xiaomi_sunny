@@ -136,8 +136,8 @@ TARGET_GPS_COMPONENT_VARIANT := gps
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    android.hardware.health-service.qti \
+    android.hardware.health-service.qti_recovery
 
 # Keylayout
 PRODUCT_COPY_FILES += \
