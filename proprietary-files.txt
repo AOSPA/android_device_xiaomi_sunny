@@ -1,5 +1,5 @@
-# All unpinned blobs below are extracted from sunny-user 12 RKQ1.210614.002 V14.0.3.0.SKGMIXM
 # All pinned blobs below are extracted from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+# All unpinned blobs below are extracted from sunny-user 12 RKQ1.210614.002 V14.0.3.0.SKGMIXM
 
 # ACDB
 vendor/etc/acdbdata/IDP/india/INDIA_Bluetooth_cal.acdb
@@ -406,8 +406,8 @@ vendor/lib64/camera/components/libmmcamera_cac3.so
 
 # Camera-Megvii
 vendor/etc/camera/megviifacepp_0_5_2_model
-vendor/lib64/libmegface.so
 vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libmegface.so
 
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -507,9 +507,9 @@ vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 # DRM - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|d3d6ed383483747f8bec574adcac1c24ef1ac3a4
 vendor/bin/qseecomd|1d406a3605c5969901be7640c4a6e9ada5e5d0a6
-vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
 vendor/etc/init/qseecomd.rc|0ebfb7c5d1d2459be4fdac951a182dc486f3bda7
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
+vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|8ea0cfc08930bd0d93f2e6b0e53ca9151870db7c
 vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
 vendor/lib64/libGPreqcancel_svc.so|897a58845264ab512ee3a1041e608c8f16275556
