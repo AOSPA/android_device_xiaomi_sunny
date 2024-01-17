@@ -8,9 +8,6 @@ persist.vendor.service.bdroid.soc.alwayson=true
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 
-# FUSE passthrough
-persist.sys.fuse.passthrough.enable=true
-
 # Display
 debug.force_no_blanking=true
 

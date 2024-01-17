@@ -1,3 +1,6 @@
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Keyboard
 ro.com.google.ime.bs_theme=true
 ro.com.google.ime.theme_id=5
