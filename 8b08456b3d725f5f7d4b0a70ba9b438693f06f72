@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d9b2c8a0_9afed949",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-01-25T10:08:43Z",
+      "side": 1,
+      "message": "missing )",
+      "revId": "8b08456b3d725f5f7d4b0a70ba9b438693f06f72",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
