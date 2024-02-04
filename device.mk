@@ -79,10 +79,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
-# Charger
-PRODUCT_PACKAGES += \
-    libsuspend
-
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
@@ -121,9 +117,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.fastbootd.available=true
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -222,7 +215,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libjson \
     librmnetctl
 
 # Sensors
@@ -267,5 +259,4 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libdisplayconfig.system.qti \
-    libqdMetaData.system \
-    libwfdaac_vendor
+    libqdMetaData.system
