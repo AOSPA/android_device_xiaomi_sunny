@@ -574,7 +574,6 @@ vendor/bin/xtra-daemon|49887eb451c713c6adb1c3c502775e116b02af7c
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|4f7dc0ed3f65a0d79ffdd94fa2e5ecd2ecbdd21f
 vendor/lib64/libcdfw.so|55d33db3a8339cf4e051b5d8ce615712a19612d7
 vendor/lib64/libcdfw_remote_api.so|faaf6c57e4c1c40d5e604d6932704bf63d883e96
-vendor/lib64/libdataitems.so|c2c8d1105007976a2a47a81c9a501c384f343e62
 vendor/lib64/libgdtap.so|ad5583ba837678f78c84a7ff64a4fae5a3b1097d
 vendor/lib64/libgnss.so|6ee63af4dcdeddbf504bfc516fd96661e4d668fc
 vendor/lib64/libgps.utils.so|3ac139e6ee336f5955677d6a5a69421fe01c7f23
@@ -585,7 +584,6 @@ vendor/lib64/libloc_api_v02.so|38e8385718f68dc2b7a930d942e6836a1da0e450
 vendor/lib64/libloc_core.so|fb9b99a98d7bb94e765780782bf52b27dcfc30e8
 vendor/lib64/libloc_socket.so|347eebf332c92d52516e70a89bce3211de0f98df
 vendor/lib64/liblocation_api.so|205c5c7824f7029e62465bbc60b73bed9912ab4e
-vendor/lib64/liblocationservice.so|2ebb9770b47fbe9bc22a6078c9e1567e4b8d64ef
 vendor/lib64/liblocationservice_glue.so|4b904ec55591e9268d866ca058f13e6215f80bb7
 vendor/lib64/liblowi_client.so|98bec3f996ac302ea1ad663ff0fee1a578a65e64
 vendor/lib64/liblowi_wifihal.so|e99342eb94a322367d28e437e4dccf375f145e5d
@@ -600,6 +598,10 @@ vendor/lib64/vendor.qti.gnss@3.0.so|1c0b41eddcc4789e1ea842be02d511afad123a8e
 vendor/lib64/vendor.qti.gnss@4.0-service.so|d20a0fd214eb4f7aa2d4b2c2cd14ea2b120a49f5
 vendor/lib64/vendor.qti.gnss@4.0.so|e38ae43982dc62bf48193a6c3eb2ae385adb37aa
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
+
+# GNSS - LA.UM.9.1.r1-12900-SMxxx0.0
+vendor/lib64/libdataitems.so|ac2c6975b584bdf745d09b15aeb3fd3445ab1b71
+vendor/lib64/liblocationservice.so|3470dd742a7ef53a6733db98aa405eaa2bfc59e0
 
 # IMS - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/ims_rtp_daemon|514b4f3a8483c21526d98634aaf8f01e3a59328a
